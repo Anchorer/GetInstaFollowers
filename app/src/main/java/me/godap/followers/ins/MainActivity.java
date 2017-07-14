@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(Consts.TAG, "Login result: " + response.toString());
                 if (response.isSuccessful()) {
                     Log.d(Consts.TAG, "Login Success: " + response.body());
+                    // 登录成功之后的信息都在Header里
                     Headers headers = response.headers();
                     Log.d(Consts.TAG, "Headers: " + headers.toString());
                 }
